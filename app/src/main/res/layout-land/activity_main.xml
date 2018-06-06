@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradi" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="300dp">
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@+id/viewPager"
+        android:background="@drawable/gradi1"
+        android:fontFamily="cursive"
+        android:text="Minerva"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/descript"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#48b1bf"
+        android:layout_below="@+id/title"
+        android:text="A place where photography knows no leaps and bounds. Time to channelize your inner nirvana of clicking images with fun and uniqueness imbibed in it. Looking forward for your active and enchanting support, do join early for additional perks."
+        android:padding="6dp"/>
+
+    <ImageView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/descript"
+        android:src="@drawable/address"/>
+
+    <TextView
+        android:id="@+id/addr1"
+        android:layout_width="wrap_content"
+        android:autoLink="map"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descript"
+        android:padding="8dp"
+        android:textSize="20sp"
+        android:textColorLink="#cbb4d4"
+        android:layout_toRightOf="@+id/addr"
+        android:text="514 S. Magnolia St. Orlando, FL 32806"/>
+
+    <ImageView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@+id/addr"
+        android:src="@drawable/phone"/>
+
+    <TextView
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:autoLink="phone"
+        android:textColorLink="#cbb4d4"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addr1"
+        android:padding="6dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/addr"
+        android:text="+ 91 9022983935"/>
+
+    <ImageView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/phone"
+        android:src="@drawable/email"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:autoLink="email"
+        android:textColorLink="#cbb4d4"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone1"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/addr"
+        android:text="vivek6960@gmail.com"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:padding="6dp"
+        android:textColor="#cbb4d4"
+        android:layout_margin="15dp"
+        android:text="For further information and early bird discount do vist us on www.random.org"
+        android:layout_below="@id/mail"/>
+
+</RelativeLayout>
+
+</ScrollView>
